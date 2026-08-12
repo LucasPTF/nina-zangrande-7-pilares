@@ -127,8 +127,8 @@ p { color: #435653; }
 .hero__trust div { display: grid; gap: 5px; }
 .hero__trust strong { color: var(--plum); font-family: var(--display); font-size: 2rem; font-weight: 600; }
 .hero__trust span { color: var(--muted); font-size: .72rem; line-height: 1.4; }
-.hero__visual { position: relative; padding: 28px 0 44px 28px; }
-.hero__halo { position: absolute; inset: 0 8% 14% 0; border-radius: 50% 50% 4px 4px; background: linear-gradient(145deg, #e4d5ce, #d2b4bd); }
+.hero__visual { position: relative; padding: 24px; }
+.hero__halo { position: absolute; inset: 0; border-radius: 48% 48% 4px 4px; background: linear-gradient(145deg, #eaded8, #d9c5c8); }
 .hero__note { position: absolute; right: -18px; bottom: 0; display: grid; min-width: 235px; padding: 20px 23px; color: #fff; background: var(--plum); box-shadow: var(--shadow); }
 .hero__note span { font-size: .72rem; letter-spacing: .05em; text-transform: uppercase; }
 .hero__note strong { font-family: var(--display); font-size: 1.4rem; }
@@ -201,7 +201,7 @@ p { color: #435653; }
 
 .about { overflow: hidden; }
 .about__grid { display: grid; grid-template-columns: .88fr 1.12fr; gap: 110px; align-items: center; }
-.about__visual { position: relative; max-width: 470px; padding: 22px 0 38px 22px; background: linear-gradient(145deg, #d8c8bf 0 72%, transparent 72%); }
+.about__visual { position: relative; max-width: 470px; padding: 22px; background: linear-gradient(145deg, #e4d8d2, #d3bdc1); }
 .photo-placeholder--profile .photo-placeholder__frame { aspect-ratio: 4 / 5; }
 .about__seal { position: absolute; right: -40px; bottom: 5px; display: grid; width: 132px; height: 132px; place-content: center; border-radius: 50%; color: var(--ink); background: var(--gold); text-align: center; box-shadow: var(--shadow); }
 .about__seal strong { font-family: var(--display); font-size: 2.1rem; line-height: 1; }
@@ -272,14 +272,14 @@ footer p { margin: 0; font-size: .72rem; }
   .hero__actions p { max-width: none; }
   .hero__trust { grid-template-columns: 1fr; gap: 13px; }
   .hero__trust div { grid-template-columns: 55px 1fr; align-items: center; }
-  .hero__visual { padding-left: 10px; }
+  .hero__visual { padding: 14px; }
   .hero__note { right: -2px; min-width: 210px; }
   .recognition__grid { gap: 34px; }
   .analogy-card, .workshop__card, .price-card { padding: 34px 26px; }
   .pillars__grid, .bonuses__grid { grid-template-columns: 1fr; }
   .pillar-card:first-child { grid-column: auto; }
   .pillar-card { min-height: 220px; }
-  .about__visual { width: calc(100% - 26px); }
+  .about__visual { width: 100%; padding: 14px; }
   .about__seal { right: -25px; width: 110px; height: 110px; }
   .offer { padding-block: 82px; }
   .price-card__price strong { font-size: 5rem; }
@@ -291,4 +291,5 @@ footer p { margin: 0; font-size: .72rem; }
   html { scroll-behavior: auto; }
   *, *::before, *::after { transition-duration: .01ms !important; }
 }
+
 

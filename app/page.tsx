@@ -70,7 +70,7 @@ export default function Home() {
         <div className="hero__visual">
           <div className="hero__halo" aria-hidden="true" />
           <PhotoPlaceholder kind="hero" />
-          <div className="hero__note"><span>Não é falta de talento.</span><strong>É falta de estrutura.</strong></div>
+          
         </div>
       </section>
 
@@ -104,7 +104,7 @@ export default function Home() {
 
       <section className="section bonuses"><div className="shell"><div className="section-heading"><p className="eyebrow">MATERIAIS PARA CONTINUAR</p><h2>Você não recebe apenas a aula.</h2></div><div className="bonuses__grid">{bonuses.map((bonus) => <article className="bonus-card" key={bonus.label}><span>{bonus.label}</span><h3>{bonus.title}</h3><p>{bonus.text}</p></article>)}</div></div></section>
 
-      <section className="section about"><div className="shell about__grid"><div className="about__visual"><PhotoPlaceholder kind="profile" /><div className="about__seal"><strong>26+</strong><span>anos de mercado</span></div></div><div className="about__copy"><p className="eyebrow">QUEM VAI GUIAR VOCÊ</p><h2>Nina Zangrande</h2><p className="about__lead">Experiência construída no atendimento, na gestão e na formação de profissionais da beleza.</p><p>Ao longo de mais de 26 anos, Nina transformou a vivência prática em cursos, treinamentos e mentorias, com atuação também ao lado de instituições como SENAC e SEBRAE.</p><p>O Método ZANGRANDE® nasce dessa visão integrada: técnica, posicionamento premium, gestão empresarial e crescimento estratégico.</p><blockquote>“Por trás do serviço existe uma empresa — e ela também precisa ser cuidada.”</blockquote></div></div></section>
+      <section className="section about"><div className="shell about__grid"><div className="about__visual"><PhotoPlaceholder kind="profile" /></div><div className="about__copy"><p className="eyebrow">QUEM VAI GUIAR VOCÊ</p><h2>Nina Zangrande</h2><p className="about__lead">Experiência construída no atendimento, na gestão e na formação de profissionais da beleza.</p><p>Ao longo de mais de 26 anos, Nina transformou a vivência prática em cursos, treinamentos e mentorias, com atuação também ao lado de instituições como SENAC e SEBRAE.</p><p>O Método ZANGRANDE® nasce dessa visão integrada: técnica, posicionamento premium, gestão empresarial e crescimento estratégico.</p><blockquote>“Por trás do serviço existe uma empresa — e ela também precisa ser cuidada.”</blockquote></div></div></section>
 
       <section className="section audience"><div className="shell audience__grid"><div><p className="eyebrow">ESTE WORKSHOP É PARA VOCÊ QUE...</p><h2>Já sabe trabalhar, mas quer parar de sustentar tudo sozinha.</h2></div><ul className="audience__list"><li>Sente que o dinheiro não acompanha o esforço.</li><li>Tem medo de aumentar o preço e perder clientes.</li><li>Não sabe exatamente quanto sobra no fim do mês.</li><li>Fez cursos técnicos, mas o negócio não cresceu na mesma proporção.</li><li>Quer começar a pensar como empresária sem perder a excelência profissional.</li></ul></div></section>
 
@@ -119,4 +119,5 @@ export default function Home() {
     </main>
   );
 }
+
 

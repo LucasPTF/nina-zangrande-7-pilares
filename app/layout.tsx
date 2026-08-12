@@ -5,7 +5,7 @@ export const metadata: Metadata = {
   title: "Os 7 Pilares da Empresária da Beleza | Nina Zangrande",
   description:
     "Workshop online e ao vivo com Nina Zangrande para profissionais da beleza que querem organizar o negócio, identificar gargalos e crescer com direção.",
-  metadataBase: new URL("https://nina-zangrande.sites.openai.com"),
+  metadataBase: new URL("https://nina-zangrande-7-pilares.dinizdcgd.chatgpt.site"),
   openGraph: {
     title: "Os 7 Pilares da Empresária da Beleza",
     description: "Você sabe fazer seu trabalho. Agora falta fazer o negócio funcionar.",

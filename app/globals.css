@@ -151,6 +151,7 @@ p { color: #435653; }
 .photo-placeholder--image .photo-placeholder__frame::before,
 .photo-placeholder--image .photo-placeholder__frame::after { display: none; }
 .photo-placeholder__image { width: 100%; height: 100%; object-fit: cover; }
+.photo-placeholder--hero .photo-placeholder__frame { border-radius: 48% 48% 4px 4px; }
 .photo-placeholder--hero .photo-placeholder__image { object-position: center top; }
 .photo-placeholder--profile .photo-placeholder__image { object-position: center center; }
 .photo-placeholder__caption { display: grid; gap: 1px; padding: 14px 18px; color: #fff; background: rgba(20,43,43,.9); }
@@ -291,5 +292,6 @@ footer p { margin: 0; font-size: .72rem; }
   html { scroll-behavior: auto; }
   *, *::before, *::after { transition-duration: .01ms !important; }
 }
+
 
 

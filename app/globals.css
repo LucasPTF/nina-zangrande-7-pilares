@@ -148,6 +148,11 @@ p { color: #435653; }
 .photo-placeholder__frame::before, .photo-placeholder__frame::after { content: ""; position: absolute; inset: 9%; border: 1px dashed rgba(255,255,255,.72); }
 .photo-placeholder__frame::after { inset: 42% 19% auto; height: 1px; border-width: 1px 0 0; }
 .photo-placeholder__mark { color: rgba(255,255,255,.86); font-family: var(--display); font-size: clamp(4rem, 8vw, 7rem); letter-spacing: -.08em; }
+.photo-placeholder--image .photo-placeholder__frame::before,
+.photo-placeholder--image .photo-placeholder__frame::after { display: none; }
+.photo-placeholder__image { width: 100%; height: 100%; object-fit: cover; }
+.photo-placeholder--hero .photo-placeholder__image { object-position: center top; }
+.photo-placeholder--profile .photo-placeholder__image { object-position: center center; }
 .photo-placeholder__caption { display: grid; gap: 1px; padding: 14px 18px; color: #fff; background: rgba(20,43,43,.9); }
 .photo-placeholder__caption strong { font-size: .82rem; letter-spacing: .04em; }
 .photo-placeholder__caption span { font-size: .66rem; opacity: .75; }
@@ -286,3 +291,4 @@ footer p { margin: 0; font-size: .72rem; }
   html { scroll-behavior: auto; }
   *, *::before, *::after { transition-duration: .01ms !important; }
 }
+

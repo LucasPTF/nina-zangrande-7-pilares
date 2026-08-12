@@ -23,12 +23,17 @@ const faqs = [
 ];
 
 function PhotoPlaceholder({ kind }: { kind: "hero" | "profile" }) {
+  const isHero = kind === "hero";
   return (
-    <div className={`photo-placeholder photo-placeholder--${kind}`}>
-      <div className="photo-placeholder__frame" aria-hidden="true"><span className="photo-placeholder__mark">NZ</span></div>
-      <div className="photo-placeholder__caption">
-        <strong>{kind === "hero" ? "Foto principal da Nina" : "Foto de apresentação"}</strong>
-        <span>{kind === "hero" ? "Retrato vertical • fundo elegante" : "Retrato profissional • plano médio"}</span>
+    <div className={`photo-placeholder photo-placeholder--${kind} photo-placeholder--image`}>
+      <div className="photo-placeholder__frame">
+        <img
+          className="photo-placeholder__image"
+          src={isHero ? "/nina-headline.png" : "/nina-apresentacao.png"}
+          alt={isHero ? "Nina Zangrande, criadora do Método ZANGRANDE" : "Nina Zangrande, especialista em negócios da beleza"}
+          loading={isHero ? "eager" : "lazy"}
+          decoding="async"
+        />
       </div>
     </div>
   );
@@ -114,3 +119,4 @@ export default function Home() {
     </main>
   );
 }
+

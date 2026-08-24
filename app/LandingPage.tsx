@@ -90,9 +90,9 @@ export default function LandingPage({ hero }: { hero: HeroVariant }) {
 
       <section className="section recognition">
         <div className="shell recognition__grid">
-          <div><p className="eyebrow eyebrow--light">SE ISSO PARECE A SUA ROTINA...</p><h2>Você trabalha muito. Mas a empresa ainda não devolve o que seu talento merece.</h2></div>
+          <div><p className="eyebrow eyebrow--light">A VERDADE QUE NINGUÉM TE FALA...</p><h2>Você ainda não tem uma empresa. Tem um trabalho que exige tudo de você — e devolve muito menos.</h2></div>
           <div className="recognition__list">
-            {["Atende, responde WhatsApp, compra material, posta e resolve tudo.", "Sabe que entrega um bom serviço, mas trava na hora de cobrar.", "Vê dinheiro entrando e termina o mês sem saber quanto realmente sobrou.", "Busca mais clientes, mesmo sentindo que a estrutura atual já está no limite."].map((item) => <p key={item}>{item}</p>)}
+            {["Você faz o trabalho de cinco pessoas e ainda termina o dia sentindo que ficou para trás.", "Entrega resultado de alto nível, mas encolhe a própria voz na hora de cobrar o que vale.", "O dinheiro entra, desaparece e você não sabe se lucrou ou apenas movimentou a conta.", "Corre atrás de mais clientes para alimentar uma estrutura que já está drenando seu tempo, seu lucro e sua energia."].map((item) => <p key={item}>{item}</p>)}
           </div>
         </div>
       </section>

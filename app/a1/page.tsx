@@ -1,6 +1,7 @@
-import LandingPage, { type HeroVariant } from "./LandingPage";
+import LandingPage, { type HeroVariant } from "../LandingPage";
 
 const hero: HeroVariant = {
+  angle: "Ângulo 1",
   eyebrow: "O MÉTODO PARA UMA BELEZA QUE LUCRA E TRANSFORMA",
   title: "Você já domina a beleza.",
   highlight: "Agora é hora de dominar o negócio.",
@@ -8,6 +9,6 @@ const hero: HeroVariant = {
   button: "Quero entrar para os 7 Pilares",
 };
 
-export default function Home() {
+export default function AngleOnePage() {
   return <LandingPage hero={hero} />;
 }

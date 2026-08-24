@@ -161,6 +161,32 @@ footer { padding-block: 35px 100px; background: #020201; border-top: 1px solid r
 footer p { margin: 0; color: #8b8377; font-size: .71rem; }
 .mobile-cta { display: none; }
 
+.thanks-page { min-height: 100svh; color: var(--white); background: radial-gradient(circle at 18% 30%, rgba(213,166,63,.2), transparent 28%), radial-gradient(circle at 85% 15%, rgba(213,166,63,.13), transparent 24%), #050504; }
+.thanks-header { display: flex; min-height: 112px; align-items: center; justify-content: space-between; border-bottom: 1px solid rgba(213,166,63,.23); }
+.thanks-header a { display: inline-flex; }
+.thanks-header > span { color: var(--gold); font-size: .65rem; font-weight: 850; letter-spacing: .15em; }
+.thanks-logo { width: 190px; height: 88px; object-fit: contain; object-position: left center; }
+.thanks-hero { padding-block: 86px 108px; }
+.thanks-grid { display: grid; grid-template-columns: 1.05fr .82fr; gap: 90px; align-items: center; }
+.thanks-confirmation { display: inline-flex; align-items: center; gap: 10px; margin-bottom: 28px; color: var(--gold-light); font-size: .7rem; font-weight: 900; letter-spacing: .13em; text-transform: uppercase; }
+.thanks-confirmation span { display: grid; width: 30px; height: 30px; place-items: center; border: 1px solid var(--gold); border-radius: 50%; color: var(--black); background: var(--gold); font-size: .9rem; }
+.thanks-copy h1 { max-width: 780px; margin-bottom: 30px; color: var(--white); font-size: clamp(4rem, 7.2vw, 7.2rem); }
+.thanks-copy h1 span { display: block; color: var(--gold); }
+.thanks-lead { max-width: 690px; color: #ddd5c8; font-size: 1.18rem; }
+.thanks-message { max-width: 680px; margin-top: 38px; padding: 24px 27px; border-left: 3px solid var(--gold); background: rgba(255,255,255,.055); }
+.thanks-message strong { color: var(--gold-light); font-size: .72rem; letter-spacing: .12em; text-transform: uppercase; }
+.thanks-message p { margin: 7px 0 0; color: #cbc2b5; font-size: .9rem; }
+.thanks-panel { padding: 46px; border: 1px solid rgba(213,166,63,.38); color: var(--black); background: var(--ivory); box-shadow: 22px 22px 0 rgba(213,166,63,.13); }
+.thanks-panel h2 { margin-bottom: 34px; font-size: clamp(2.4rem, 4vw, 3.8rem); }
+.thanks-steps { display: grid; }
+.thanks-steps article { display: grid; grid-template-columns: 44px 1fr; gap: 17px; padding: 22px 0; border-top: 1px solid var(--line); }
+.thanks-steps article > span { color: var(--gold-deep); font-family: var(--display); font-size: 1.2rem; }
+.thanks-steps h3 { margin-bottom: 7px; font-family: var(--body); font-size: .96rem; font-weight: 850; letter-spacing: 0; line-height: 1.25; }
+.thanks-steps p { margin-bottom: 0; font-size: .86rem; line-height: 1.55; }
+.thanks-panel .button { width: 100%; margin-top: 25px; }
+.thanks-footer { padding-block: 30px; border-top: 1px solid rgba(213,166,63,.18); background: #020201; }
+.thanks-footer p { margin: 0; color: #817a6f; font-size: .7rem; text-align: center; }
+
 :focus-visible { outline: 3px solid var(--gold); outline-offset: 4px; }
 @media (max-width: 1020px) {
   .hero__grid { grid-template-columns: 1fr; gap: 50px; }
@@ -170,6 +196,8 @@ footer p { margin: 0; color: #8b8377; font-size: .71rem; }
   .about__visual { margin-inline: auto; }
   .offer__wrap { max-width: 780px; }
   .enrollment-card { max-width: 500px; }
+  .thanks-grid { grid-template-columns: 1fr; gap: 58px; }
+  .thanks-panel { max-width: 680px; }
 }
 @media (max-width: 700px) {
   body { font-size: 16px; }
@@ -197,6 +225,12 @@ footer p { margin: 0; color: #8b8377; font-size: .71rem; }
   .footer__inner { align-items: flex-start; flex-direction: column; }
   footer { padding-bottom: 108px; }
   .mobile-cta { position: fixed; z-index: 50; right: 12px; bottom: 12px; left: 12px; display: flex; min-height: 55px; align-items: center; justify-content: center; color: #0b0905; background: linear-gradient(135deg, var(--gold-light), var(--gold)); box-shadow: 0 12px 35px rgba(0,0,0,.36); font-size: .73rem; font-weight: 900; letter-spacing: .08em; text-decoration: none; text-transform: uppercase; }
+  .thanks-header { min-height: 90px; }
+  .thanks-header > span { display: none; }
+  .thanks-logo { width: 145px; height: 72px; }
+  .thanks-hero { padding-block: 62px 82px; }
+  .thanks-copy h1 { font-size: clamp(3.5rem, 16vw, 5rem); }
+  .thanks-panel { padding: 35px 25px; box-shadow: 12px 12px 0 rgba(213,166,63,.13); }
 }
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }

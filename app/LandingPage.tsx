@@ -31,7 +31,6 @@ const faqs = [
 ];
 
 export type HeroVariant = {
-  angle?: string;
   eyebrow: string;
   title: string;
   highlight: string;
@@ -72,7 +71,6 @@ export default function LandingPage({ hero }: { hero: HeroVariant }) {
       <section className="hero" id="inicio">
         <div className="shell hero__grid">
           <div className="hero__copy">
-            {hero.angle ? <span className="hero__angle">{hero.angle}</span> : null}
             <p className="eyebrow eyebrow--light">{hero.eyebrow}</p>
             <h1>{hero.title}<span>{hero.highlight}</span></h1>
             <p className="hero__lead">{hero.lead}</p>

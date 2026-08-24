@@ -1,7 +1,6 @@
 import LandingPage, { type HeroVariant } from "../LandingPage";
 
 const hero: HeroVariant = {
-  angle: "Ângulo 2",
   eyebrow: "TRABALHAR MAIS NÃO FAZ UMA EMPRESA FUNCIONAR MELHOR",
   title: "Você não abriu seu negócio",
   highlight: "para virar funcionária dele.",

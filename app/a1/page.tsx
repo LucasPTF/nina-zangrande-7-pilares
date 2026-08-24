@@ -1,7 +1,6 @@
 import LandingPage, { type HeroVariant } from "../LandingPage";
 
 const hero: HeroVariant = {
-  angle: "Ângulo 1",
   eyebrow: "O MÉTODO PARA UMA BELEZA QUE LUCRA E TRANSFORMA",
   title: "Você já domina a beleza.",
   highlight: "Agora é hora de dominar o negócio.",

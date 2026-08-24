@@ -9,10 +9,10 @@ const pillars = [
 ];
 
 const experience = [
-  { number: "01", title: "Comece pela base gravada", text: "Acesse as aulas no seu ritmo e construa uma visão completa dos 7 Pilares." },
+  { number: "01", title: "Participe dos encontros ao vivo", text: "Encontre Nina online e construa uma visão completa dos 7 Pilares aplicada ao seu negócio." },
   { number: "02", title: "Leve sua realidade para o ao vivo", text: "Nos encontros com Nina, tire dúvidas, debata desafios e trabalhe o momento atual da sua empresa." },
   { number: "03", title: "Aplique entre os encontros", text: "Use os materiais e desafios para transformar clareza em decisões dentro do negócio." },
-  { number: "04", title: "Evolua em ciclos", text: "Quem entra continuamente começa pela base e participa dos ciclos ao vivo conforme a agenda da experiência." },
+  { number: "04", title: "Evolua a cada encontro", text: "Quem entra continuamente participa dos encontros ao vivo conforme o calendário da experiência." },
 ];
 
 const bonuses = [
@@ -22,8 +22,8 @@ const bonuses = [
 ];
 
 const faqs = [
-  { question: "O curso é gravado ou ao vivo?", answer: "Os dois. Você recebe acesso ao conteúdo gravado para estudar no seu ritmo e também participa de encontros ao vivo com Nina dentro da experiência." },
-  { question: "Como funciona para quem entra continuamente?", answer: "Você começa pelas aulas gravadas e entra nos ciclos ao vivo conforme o calendário da experiência. Assim, chega aos encontros com base para trabalhar dúvidas, desafios e o momento atual do seu negócio." },
+  { question: "Como acontecem as aulas?", answer: "As aulas são online e ao vivo com Nina. Em cada encontro, você trabalha dúvidas, desafios e o momento atual do seu negócio." },
+  { question: "Como funciona para quem entra continuamente?", answer: "Você participa dos encontros ao vivo conforme o calendário da experiência e avança na aplicação dos 7 Pilares dentro da realidade da sua empresa." },
   { question: "Preciso ter salão próprio?", answer: "Não. O método foi pensado para profissionais da beleza que querem organizar o trabalho como negócio, com ou sem espaço próprio." },
   { question: "Serve para quem trabalha sozinha?", answer: "Sim. A realidade de atender, responder, comprar, postar e resolver tudo sozinha é um dos pontos centrais do curso." },
   { question: "É um curso técnico?", answer: "Não. O foco é a empresa por trás do serviço: mentalidade, posicionamento, experiência, finanças, marketing, processos e crescimento." },
@@ -59,7 +59,7 @@ function NinaPhoto({ kind }: { kind: "hero" | "profile" }) {
 export default function LandingPage({ hero }: { hero: HeroVariant }) {
   return (
     <main>
-      <div className="announcement"><span>Curso online</span><span className="announcement__dot" /><span>Aulas gravadas + encontros ao vivo</span></div>
+      <div className="announcement"><span>Curso online e ao vivo</span><span className="announcement__dot" /><span>Encontros com Nina Zangrande</span></div>
 
       <div className="header-wrap">
         <header className="site-header shell">
@@ -76,7 +76,7 @@ export default function LandingPage({ hero }: { hero: HeroVariant }) {
             <p className="hero__lead">{hero.lead}</p>
             <div className="hero__actions">
               <a className="button button--gold" href="#inscricao">{hero.button}</a>
-              <p>Aprenda no seu ritmo. Evolua com direção ao vivo.</p>
+              <p>Aprenda ao vivo. Evolua com direção.</p>
             </div>
             <div className="hero__trust">
               <div><strong>26+</strong><span>anos no mercado da beleza</span></div>
@@ -111,7 +111,7 @@ export default function LandingPage({ hero }: { hero: HeroVariant }) {
 
       <section className="section experience">
         <div className="shell">
-          <div className="section-heading"><p className="eyebrow">UMA EXPERIÊNCIA CONTÍNUA</p><h2>Você aprende no seu ritmo. E evolui ao vivo, em ciclos.</h2><p>O conteúdo gravado entrega a base. Os encontros com Nina transformam essa base em decisões para a sua realidade.</p></div>
+          <div className="section-heading"><p className="eyebrow">UMA EXPERIÊNCIA AO VIVO</p><h2>Você aprende com Nina. E evolui a cada encontro.</h2><p>Cada aula ao vivo transforma os 7 Pilares em decisões conectadas à realidade da sua empresa.</p></div>
           <div className="experience__grid">{experience.map((item) => <article className="experience-card" key={item.number}><span>{item.number}</span><h3>{item.title}</h3><p>{item.text}</p></article>)}</div>
         </div>
       </section>
@@ -129,7 +129,7 @@ export default function LandingPage({ hero }: { hero: HeroVariant }) {
 
       <section className="section audience"><div className="shell audience__grid"><div><p className="eyebrow eyebrow--light">OS 7 PILARES SÃO PARA VOCÊ QUE...</p><h2>Já sabe fazer. Agora quer planejar, organizar, faturar e crescer.</h2></div><ul className="audience__list"><li>Sente que o dinheiro não acompanha o esforço.</li><li>Tem medo de aumentar o preço e perder clientes.</li><li>Não sabe exatamente quanto sobra no fim do mês.</li><li>Fez cursos técnicos, mas o negócio não cresceu na mesma proporção.</li><li>Quer liderar a própria empresa com mais segurança e liberdade.</li></ul></div></section>
 
-      <section className="section offer" id="inscricao"><div className="shell offer__wrap"><div className="offer__copy"><p className="eyebrow eyebrow--light">INSCRIÇÕES CONTÍNUAS</p><h2>Entre agora. Comece pela base. Evolua a cada ciclo.</h2><p>Você recebe acesso às aulas gravadas e avança com Nina nos encontros ao vivo, levando para a mesa as dúvidas e os desafios do momento atual da sua empresa.</p><div className="offer__details"><span>Conteúdo gravado</span><span>Encontros ao vivo</span><span>Desafios de aplicação</span><span>Materiais de apoio</span><span>Método ZANGRANDE®</span></div></div><div className="enrollment-card"><BrandLogo className="brand-logo--card" /><span>OS 7 PILARES DA EMPRESÁRIA DA BELEZA</span><h3>Seu talento já trouxe você até aqui. A estrutura leva você adiante.</h3><p>Conheça a experiência e receba as informações para entrar.</p><a className="button button--gold" href="https://www.ninazangrande.com.br" target="_blank" rel="noreferrer">Quero conhecer os 7 Pilares</a><small>Você será direcionada ao canal oficial de Nina Zangrande.</small></div></div></section>
+      <section className="section offer" id="inscricao"><div className="shell offer__wrap"><div className="offer__copy"><p className="eyebrow eyebrow--light">INSCRIÇÕES CONTÍNUAS</p><h2>Entre agora. Participe ao vivo. Evolua a cada encontro.</h2><p>Você participa de aulas online e ao vivo com Nina, levando para a mesa as dúvidas e os desafios do momento atual da sua empresa.</p><div className="offer__details"><span>Aulas online e ao vivo</span><span>Troca direta com Nina</span><span>Desafios de aplicação</span><span>Materiais de apoio</span><span>Método ZANGRANDE®</span></div></div><div className="enrollment-card"><BrandLogo className="brand-logo--card" /><span>OS 7 PILARES DA EMPRESÁRIA DA BELEZA</span><h3>Seu talento já trouxe você até aqui. A estrutura leva você adiante.</h3><p>Conheça a experiência e receba as informações para entrar.</p><a className="button button--gold" href="https://www.ninazangrande.com.br" target="_blank" rel="noreferrer">Quero conhecer os 7 Pilares</a><small>Você será direcionada ao canal oficial de Nina Zangrande.</small></div></div></section>
 
       <section className="section faq shell"><div className="section-heading section-heading--center"><p className="eyebrow">PERGUNTAS FREQUENTES</p><h2>Antes de começar</h2></div><div className="faq__list">{faqs.map((faq) => <details key={faq.question}><summary>{faq.question}</summary><p>{faq.answer}</p></details>)}</div></section>
 

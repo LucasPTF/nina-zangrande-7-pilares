@@ -1,6 +1,6 @@
 .git
 .next
-.openai
+.deployment
 .vercel
 .vinext
 .wrangler
